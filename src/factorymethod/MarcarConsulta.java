@@ -2,5 +2,5 @@ package factorymethod;
 
 public interface MarcarConsulta {
 
-    public Medico marcarConsulta ();
+    public Medico marcarConsulta (String nome);
 }

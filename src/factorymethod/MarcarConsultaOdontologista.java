@@ -3,7 +3,7 @@ package factorymethod;
 public class MarcarConsultaOdontologista implements MarcarConsulta {
 
     @Override
-    public Medico marcarConsulta() {
-        return new Odontologista();
+    public Medico marcarConsulta(String nome) {
+        return new Odontologista(nome);
     }
 }

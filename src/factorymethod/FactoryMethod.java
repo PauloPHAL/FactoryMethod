@@ -10,17 +10,19 @@ package factorymethod;
 public class FactoryMethod {
 
     public static void main(String[] args) {
-
-        MarcarConsulta consulta = new MarcarConsultaPediatra();
-        Medico medico = consulta.marcarConsulta();
+        MarcarConsulta consulta;
+        Medico medico;
+        
+        consulta = new MarcarConsultaPediatra();
+        medico = consulta.marcarConsulta("Pedro");
         medico.exibirEspecialidade();
 
         consulta = new MarcarConsultaOftamologista();
-        medico = consulta.marcarConsulta();
+        medico = consulta.marcarConsulta("Joao");
         medico.exibirEspecialidade();
 
         consulta = new MarcarConsultaOdontologista();
-        medico = consulta.marcarConsulta();
+        medico = consulta.marcarConsulta("Anna");
         medico.exibirEspecialidade();
 
     }

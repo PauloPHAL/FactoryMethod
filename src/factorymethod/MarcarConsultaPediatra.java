@@ -12,8 +12,8 @@ package factorymethod;
 public class MarcarConsultaPediatra implements MarcarConsulta {
 
     @Override
-    public Medico marcarConsulta() {
-        return new Pediatra();
+    public Medico marcarConsulta(String nome) {
+        return new Pediatra(nome);
     }
 
 }
